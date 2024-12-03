@@ -5,7 +5,7 @@ CFLAGS = -Iinclude -DMAX_STOPS=64
 INSTALL_DIR = /usr/bin
 
 
-SOURCES = $(wildcard src/*.c)
+SOURCES =  main.c format.c sw.c termios_helper.c
 
 $(TARGET): $(SOURCES)
 	$(CC) $(CFLAGS) $(SOURCES) -o $(TARGET)
